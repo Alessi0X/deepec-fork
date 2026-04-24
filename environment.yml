@@ -1,3 +1,8 @@
+# DEPRECATED: This file is no longer maintained.
+# This package has been upgraded to Python 3.9+ and now uses pip for dependency management.
+# Conda is no longer supported. Please use requirements.txt instead.
+# See README.md for updated installation instructions.
+
 name: deepec
 channels:
   - bioconda
