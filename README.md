@@ -1,6 +1,6 @@
-#DeepEC
+# DeepEC
 
-##Procedure
+## Procedure
 
 **Note**: 
 Size of the protein sequence input file should be adjusted according to the memory size of your computer. 
@@ -42,13 +42,13 @@ This source code requires Python 3.9, 3.10, 3.11, 3.12, or 3.13.
 
 **Important**: The pre-trained model files (.h5) and label encoders (.pkl) were created with Keras 2.1.6 and scikit-learn 0.19. The code includes compatibility layers to load these legacy files with modern TensorFlow 2.x and scikit-learn 1.3+.
 
-##Example
+## Example
 
 - Run DeepEC
 
         python deepec.py -i ./example/test.fa -o ./output
 
-##Verification (Optional)
+## Verification (Optional)
 
 To verify that the upgraded version produces the same results as the original:
 
@@ -84,3 +84,14 @@ This script:
 
 Expected: EC number predictions should match exactly. DNN activity scores may differ slightly (< 0.001) due to TensorFlow version differences. 
 
+## Acknowledgments
+
+This is a fork of the original [DeepEC](https://bitbucket.org/kaistsystemsbiology/deepec) tool developed by the KAIST Systems Biology Lab. The original implementation provided the foundational enzyme function prediction models and methodology. This fork adds:
+
+• Python 3.9-3.13 compatibility (from legacy conda environment)
+• TensorFlow 2.x and modern scikit-learn support
+• Compatibility layers for legacy model files
+• Docker-based verification testing (in progress)
+• Enhanced installation documentation (in progress)
+
+Shout-out to the KAIST Systems Biology Lab for creating the original DeepEC tool!
